@@ -1,0 +1,126 @@
+/* Mise en page générale : logo gauche, formulaire droite */
+
+.signup-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Logo */
+.logo-section img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #667eea;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Formulaire */
+.form-section {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  width: 550px;
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+}
+
+/* Grille pour afficher 2 champs côte à côte */
+.grid-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Champs pleine largeur */
+.full-width {
+  grid-column: span 2;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+}
+
+.input-group input {
+  padding: 12px;
+  border: 2px solid #e1e5e9;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f9f9fb;
+}
+
+.input-group input:focus {
+  border-color: #667eea;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.15);
+}
+
+/* Bouton */
+button {
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(102,126,234,0.3);
+}
+
+/* Aperçu image */
+.preview-img {
+  margin-top: 12px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #667eea;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.preview-img:hover {
+  transform: scale(1.05);
+}
+
+/* Texte bas inscription */
+.signup-text {
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+.signup-text .signup-link {
+  color: #764ba2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-text .signup-link:hover {
+  text-decoration: underline;
+}
