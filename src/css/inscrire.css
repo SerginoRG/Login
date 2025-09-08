@@ -124,3 +124,151 @@ button:hover {
 .signup-text .signup-link:hover {
   text-decoration: underline;
 }
+
+/* Responsive Design */
+
+/* Tablet and smaller desktop */
+@media (max-width: 1024px) {
+  .signup-container {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .logo-section img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .form-section {
+    width: 450px;
+    padding: 18px;
+  }
+
+  .form-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .grid-form {
+    gap: 15px;
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .preview-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    min-height: auto;
+  }
+
+  .logo-section img {
+    width: 200px;
+    height: 200px;
+    border-width: 3px;
+  }
+
+  .form-section {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .form-section h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .grid-form {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .input-group label {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .preview-img {
+    width: 60px;
+    height: 60px;
+    border-width: 2px;
+  }
+
+  .signup-text {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  .logo-section img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .form-section {
+    padding: 12px;
+  }
+
+  .form-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .preview-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .signup-text {
+    font-size: 12px;
+  }
+}
